@@ -14,7 +14,9 @@ public abstract class Message {
 		this.user = user;
 	}
 
-	public MessageType getType() { return this.type; }
+	public MessageType getType() { 
+		return this.type;
+	}
 
 	
 	public String getUser() {
@@ -25,6 +27,4 @@ public abstract class Message {
 	public String toString() {
 		return "Message [type=" + type + ", user=" + user + "]";
 	};
-	
-	
 }
