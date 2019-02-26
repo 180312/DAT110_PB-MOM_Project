@@ -28,13 +28,13 @@ public class TestIoTSystem {
 		brokerthread.start();
 		
 		// allow broker to reaching waiting for incoming connections
-				try {
-					Thread.sleep(5000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 				
-				System.out.println("Starting display ...");
+		System.out.println("Starting display ...");
 		displaythread.start();
 		
 		// allow display to create topic 
